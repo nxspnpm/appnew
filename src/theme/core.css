@@ -1,0 +1,31 @@
+ion-toolbar{
+    --background: var(--ion-color-success-shade);
+    --color: var(--ion-color-medium-tint);
+    height: 100px;
+}
+ion-title{
+    color: whitesmoke;
+}
+ion-content{
+    --background: var(--ion-color-light-shade) 
+}
+ion-icon{
+    color:#ffffff;
+    font-size: 40px;
+    margin-left: 20px;
+    /* margin-top: 9px; */
+    
+}
+ion-searchbar{
+    --background: var(--ion-color-primary-contrast);
+    color: whitesmoke;
+    margin-top: 50px;
+}
+ion-footer{
+    height:60px;
+}
+ion-label{
+    margin-top: 0px;
+}
+
+

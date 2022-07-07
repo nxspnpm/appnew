@@ -22,10 +22,23 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './theme/core.css';
+import BaseLayout from './components/BaseLayout.vue';
+import Topmain1 from './components/Top-main.vue';
+import Topmain2 from './components/Top-main-sec.vue';
+import FooterBar from './components/Footer-menu.vue';
+import Menubar from './components/MenuBar.vue';
 
 const app = createApp(App)
   .use(IonicVue)
   .use(router);
+
+app.component('base-layout', BaseLayout)
+app.component('top-main', Topmain1)
+app.component('top-main2', Topmain2)
+app.component('footer-menu',FooterBar)
+app.component('me-nu',Menubar)
+
   
 router.isReady().then(() => {
   app.mount('#app');
