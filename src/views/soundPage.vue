@@ -67,7 +67,7 @@
 </template>
 
 <script lang="ts">
-import BaseLayout from '@/components/BaseLayout.vue';
+// import BaseLayout from '@/components/BaseLayout.vue';
 import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/vue';
 import { pin, walk, warning, wifi, wine } from 'ionicons/icons';
 import { defineComponent } from 'vue';
