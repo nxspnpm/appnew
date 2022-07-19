@@ -1,4 +1,16 @@
 <template>
+
+  <!-- <ion-grid class="menu">
+    <ion-row>
+      <ion-col size="4" >เมนูแนะนำ</ion-col>
+      <ion-col size="8">ร้านแนะนำ</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="7">โปรโมชั่น</ion-col>
+      <ion-col size="4">ซื้ออีกครั้ง</ion-col>
+    </ion-row>
+  </ion-grid> -->
+
   <ion-list-header>
     <ion-label class="host">ร้านแนะนำ</ion-label>
   </ion-list-header>
@@ -87,8 +99,8 @@ export default defineComponent({
   margin-top: -95px;
 }
 .pic {
-  width: 80px;
-  height: 80px;
+  width: 130px;
+  height: 130px;
 }
 .host{
   font-size: 17px;

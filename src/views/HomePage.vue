@@ -1,4 +1,6 @@
 <template>
+<ion-page>
+  <ion-content>
   <base-layout>
   <div class="item-content">
       <ion-list>
@@ -8,17 +10,21 @@
       </ion-list>
       </div>
   </base-layout>
+  </ion-content>
+  </ion-page>
 </template>
 
 <script lang="ts">
 // import BaseLayout from '@/components/BaseLayout.vue';
-import { IonList} from '@ionic/vue';
+import { IonList, IonPage, IonContent} from '@ionic/vue';
 import { defineComponent} from 'vue';
 import TopMain from '@/components/Top-main.vue';
 export default defineComponent ({
   components:{
     IonList,
-    TopMain
+    TopMain,
+    IonPage,
+    IonContent
 }
 })
 </script>

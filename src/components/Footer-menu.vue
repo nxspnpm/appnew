@@ -1,5 +1,4 @@
 <template>
-  
   <!-- Footer without a border -->
   <ion-footer class="ion-no-border">
     <ion-toolbar>

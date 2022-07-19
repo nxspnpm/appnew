@@ -1,14 +1,8 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar>
-        <ion-title class="text"> JPANG </ion-title>
-        <!-- <ion-buttons slot="primary">
-          <ion-button @click="clickedSearch()">
-            <ion-icon slot="icon-only" :icon="search"></ion-icon>
-          </ion-button>
-        </ion-buttons> -->
-        <ion-searchbar placeholder="Search Favorites"></ion-searchbar>
+      <ion-toolbar class="test" id="test">
+        <ion-title class="title-app"> JPANG </ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
@@ -45,6 +39,7 @@ export default defineComponent({
 
 <style>
 .text{
-  margin-top: -18px;
+  margin-top: 35px;
+  text-align: center;
 }
 </style>

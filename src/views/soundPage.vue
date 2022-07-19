@@ -1,4 +1,6 @@
 <template>
+<ion-page>
+  <ion-content>
   <base-layout>
   <ion-card>
     <ion-card-header>
@@ -64,12 +66,13 @@
   </ion-card>
 
   </base-layout>
+</ion-content>
+  </ion-page>
 </template>
 
 <script lang="ts">
-import BaseLayout from '@/components/BaseLayout.vue';
+// import BaseLayout from '@/components/BaseLayout.vue';
 import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/vue';
-import { pin, walk, warning, wifi, wine } from 'ionicons/icons';
 import { defineComponent } from 'vue';
 
 export default defineComponent({

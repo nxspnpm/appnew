@@ -1,10 +1,19 @@
 ion-toolbar{
     --background: var(--ion-color-success-shade);
-    --color: var(--ion-color-medium-tint);
-    height: 100px;
+    --color: var(--ion-color-primary-contrast);
+    height: 100%;
+}
+.test{
+    padding: 20px !important;
 }
 ion-title{
-    color: whitesmoke;
+    text-align: center;
+    font-size: 30px!important;
+    margin-top: 20px;
+    color: whitesmoke!important;
+}
+.title-app {
+    margin-top: 0px;
 }
 ion-content{
     --background: var(--ion-color-light-shade) 
@@ -27,5 +36,6 @@ ion-footer{
 ion-label{
     margin-top: 0px;
 }
+
 
 

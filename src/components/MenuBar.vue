@@ -7,7 +7,7 @@
     <ion-segment-button value="sat">
       <ion-label>ร้านใกล้ฉัน</ion-label>
     </ion-segment-button>
-    <ion-segment-button value="sat">
+    <ion-segment-button>
       <ion-label>คูปอง</ion-label>
     </ion-segment-button>
   </ion-segment>

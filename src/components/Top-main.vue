@@ -1,76 +1,43 @@
 <template>
+  <!-- <ion-grid class="menu">
+    <ion-row>
+      <ion-col size="4">เมนูแนะนำ</ion-col>
+      <ion-col size="8">ร้านแนะนำ</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="7">โปรโมชั่น</ion-col>
+      <ion-col size="4">ซื้ออีกครั้ง</ion-col>
+    </ion-row>
+  </ion-grid> -->
   <ion-grid>
     <ion-list-header>
       <ion-label class="host">เมนูแนะนำ</ion-label>
     </ion-list-header>
-    <ion-row>
-      <ion-col class="card" size="4">
+    <div class="cardower">
+      <!-- <p style="visibility: visible; ">
+        gygyfgyffyftftfvuyyfffyuyyyyuyyfyfyfyufyfycyyuyyfyfyfyufyfyffbhugygyfgyffyftftfvyfyfyufyfycyyuyyfyfyfyufyfyffbhugygyfgyffyftftfvyfyfyufyfycyyuyyfyfyfyufyfyffbhugygyfgyffyftftfvyfyfyufyfycyyuyyfyfyfyufyfyffbhugygyfgyffyftftfvuyyfffyuyyyyuyyfyfyfyufyfyffbhugygyfgyffyftftfvuyyfffyuyyyyuyyfyfyfyufyfyffbhu
+      </p> -->
+      <ion-col v-for="n in 50" :key="n">
         <ion-card class="card">
-          <a href="sound">
-            <ion-card-header>
-              <img
-            class="pic"
-            src="https://img.kapook.com/u/2020/sireeporn/cooking-4/A03.jpg"
-          />
-              <ion-card-subtitle>SOUND</ion-card-subtitle>
-              <ion-card-title>STAR</ion-card-title>
-            </ion-card-header>
-          </a>
+            <img
+              class=""
+              src="https://mpics.mgronline.com/pics/Images/562000012456501.JPEG"
+            />
+          <ion-card-content>
+            <ion-card-subtitle>N</ion-card-subtitle>
+          </ion-card-content>
         </ion-card>
       </ion-col>
-      <ion-col size="4">
-        <ion-card class="card">
-          <ion-card-header>
-            <ion-icon name="moon-outline"></ion-icon>
-            <ion-card-subtitle>SOUND</ion-card-subtitle>
-            <ion-card-title>MOON</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="4">
-        <ion-card class="card">
-          <ion-card-header>
-            <ion-icon name="sunny-outline"></ion-icon>
-            <ion-card-subtitle>SOUND</ion-card-subtitle>
-            <ion-card-title>NXS</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <!-- <ion-card>
-        <ion-card-header>
-          <img
-            class="pic"
-            src="https://img.kapook.com/u/2020/sireeporn/cooking-4/A03.jpg"
-          />
-          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-          <ion-card-title>Card Title</ion-card-title>
-        </ion-card-header>
-
-        <ion-card-content>
-          Keep close to Nature's heart... and break clear away, once in awhile,
-          and climb a mountain or spend a week in the woods. Wash your spirit
-          clean.
-        </ion-card-content>
-      </ion-card> -->
-      <!-- <ion-col size="3">
-        <ion-card  class="card">
-          <ion-card-header>
-            <ion-icon name="extension-puzzle-outline"></ion-icon>
-            <ion-card-subtitle>SOUND</ion-card-subtitle>
-            <ion-card-title>PINK</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col> -->
-    </ion-row>
+    </div>
   </ion-grid>
 </template>
 
 <script lang="ts">
-import {  IonGrid,  } from "@ionic/vue";
+import {} from "@ionic/vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  components: {  IonGrid,  },
+  components: {},
 });
 </script>
 <style>
@@ -78,17 +45,30 @@ a {
   text-decoration: none;
 }
 .card {
-  height: 100px;
-  width: 100px;
-  margin: 0 auto; /* Added */
-  /* float: none; Added */
-  margin-bottom: 10px; /* Added */
+  width: 120px;
+  height: 120px;
+
+  padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0px;
+  white-space: normal;
 }
-.host{
+.host {
   font-size: 17px;
+  padding: 0px 0px 0px !important;
 }
-.pic{
-  width: 30px;
-  height: 30px;
+.pic1 {
+  width: 100%;
+  height: 100%;
+  padding: 0px 0px 0px 0px !important;
+}
+.cardower {
+  overflow: auto;
+  white-space: nowrap;
+  width: auto;
+}
+.menu{
+  justify-content: center;
 }
 </style>

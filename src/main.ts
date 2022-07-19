@@ -1,6 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
+// import firebase from 'firebase/compat/app';
+// import 'firebase/compat/auth';
+// import 'firebase/compat/database';
+// import 'firebase/firestore';
+import  store  from './store';
 
 import { IonicVue } from '@ionic/vue';
 
@@ -29,9 +34,13 @@ import Topmain2 from './components/Top-main-sec.vue';
 import FooterBar from './components/Footer-menu.vue';
 import Menubar from './components/MenuBar.vue';
 
+
+
+
 const app = createApp(App)
   .use(IonicVue)
-  .use(router);
+  .use(router)
+  .use(store);
 
 app.component('base-layout', BaseLayout)
 app.component('top-main', Topmain1)
