@@ -24,7 +24,7 @@
       >
         <ino-col>
               <ion-tex>
-                <ion-button fill="clear" router-link="/login">Login</ion-button>
+                <ion-button fill="clear" router-link="/">Login</ion-button>
               </ion-tex>
         </ino-col>
         <ino-col>

@@ -2,7 +2,8 @@
   <ion-page>
     <ion-header>
       <ion-toolbar class="test" id="test">
-        <ion-title class="title-app"> JPANG </ion-title>
+        <ion-icon class="iconbase2" size="large" name="arrow-back" @click="$router.push('/account')"></ion-icon>
+        <ion-title class="title-app"> acconnt </ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
@@ -29,32 +30,24 @@ export default defineComponent({
     IonContent,
     IonToolbar,
   },
-  // setup() {
-  //   // const name
-  //   // const password
-  //   return {
-  //     email: null,
-  //     username:"",
-  //     check: "",
-  //   };
-  // },
   methods: {
     segmentChanged(ev: CustomEvent) {
       console.log("Segment changed", ev);
     },
   },
-  mounted(){
-        console.log(localStorage.getItem("user"))
-        // this.check = (localStorage.getItem('po'))
-        // console.log("Get Email",this.check.email)
-        // console.log("Get name",this.check.username)
-  }
+  mounted() {
+    console.log(localStorage.getItem("user"));
+  },
 });
 </script>
 
 <style>
-.text{
+.text {
   margin-top: 35px;
   text-align: center;
+}
+.iconbase2{
+  margin-top: 6px!important;
+  margin-left: -9px!important;
 }
 </style>

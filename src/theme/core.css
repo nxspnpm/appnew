@@ -16,7 +16,7 @@ ion-title{
     margin-top: 0px;
 }
 ion-content{
-    --background: var(--ion-color-light-shade) 
+    --background: var(--ion-color-primary-contrast) 
 }
 ion-icon{
     color:#ffffff;

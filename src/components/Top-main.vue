@@ -1,33 +1,72 @@
 <template>
-  <!-- <ion-grid class="menu">
-    <ion-row>
-      <ion-col size="4">เมนูแนะนำ</ion-col>
-      <ion-col size="8">ร้านแนะนำ</ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="7">โปรโมชั่น</ion-col>
-      <ion-col size="4">ซื้ออีกครั้ง</ion-col>
-    </ion-row>
-  </ion-grid> -->
   <ion-grid>
     <ion-list-header>
       <ion-label class="host">เมนูแนะนำ</ion-label>
     </ion-list-header>
     <div class="cardower">
-      <!-- <p style="visibility: visible; ">
-        gygyfgyffyftftfvuyyfffyuyyyyuyyfyfyfyufyfycyyuyyfyfyfyufyfyffbhugygyfgyffyftftfvyfyfyufyfycyyuyyfyfyfyufyfyffbhugygyfgyffyftftfvyfyfyufyfycyyuyyfyfyfyufyfyffbhugygyfgyffyftftfvyfyfyufyfycyyuyyfyfyfyufyfyffbhugygyfgyffyftftfvuyyfffyuyyyyuyyfyfyfyufyfyffbhugygyfgyffyftftfvuyyfffyuyyyyuyyfyfyfyufyfyffbhu
-      </p> -->
-      <ion-col v-for="n in 50" :key="n">
         <ion-card class="card">
-            <img
-              class=""
-              src="https://mpics.mgronline.com/pics/Images/562000012456501.JPEG"
-            />
+          <img
+            class=""
+            src="https://mpics.mgronline.com/pics/Images/562000012456501.JPEG"
+          />
           <ion-card-content>
             <ion-card-subtitle>N</ion-card-subtitle>
           </ion-card-content>
         </ion-card>
-      </ion-col>
+
+        <ion-card class="card">
+          <img
+            src="https://cms.dmpcdn.com/food/2020/10/27/09ff1490-1834-11eb-ab84-d705c02e81b2_original.jpg"
+          />
+          <ion-card-content>
+            <ion-card-subtitle>N</ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card class="card">
+          <img
+            src="https://cms.dmpcdn.com/food/2020/10/27/09ff1490-1834-11eb-ab84-d705c02e81b2_original.jpg"
+          />
+          <ion-card-content>
+            <ion-card-subtitle>N</ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card class="card">
+          <img
+            src="https://cms.dmpcdn.com/food/2020/10/27/09ff1490-1834-11eb-ab84-d705c02e81b2_original.jpg"
+          />
+          <ion-card-content>
+            <ion-card-subtitle>N</ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card class="card">
+          <img
+            src="https://cms.dmpcdn.com/food/2020/10/27/09ff1490-1834-11eb-ab84-d705c02e81b2_original.jpg"
+          />
+          <ion-card-content>
+            <ion-card-subtitle>N</ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card class="card">
+          <img
+            src="https://cms.dmpcdn.com/food/2020/10/27/09ff1490-1834-11eb-ab84-d705c02e81b2_original.jpg"
+          />
+          <ion-card-content>
+            <ion-card-subtitle>N</ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card class="card">
+          <img
+            src="https://cms.dmpcdn.com/food/2020/10/27/09ff1490-1834-11eb-ab84-d705c02e81b2_original.jpg"
+          />
+          <ion-card-content>
+            <ion-card-subtitle>N</ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
     </div>
   </ion-grid>
 </template>
@@ -68,7 +107,7 @@ a {
   white-space: nowrap;
   width: auto;
 }
-.menu{
+.menu {
   justify-content: center;
 }
 </style>

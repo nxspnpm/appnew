@@ -1,5 +1,4 @@
 <template>
-  <ion-page>
     <ion-content class="bg">
       <form @submit.prevent="register">
         <ion-grid class="bglogin">
@@ -81,7 +80,7 @@
           >
             <ino-col>
               <ion-tex>
-                <ion-button fill="clear" router-link="/login">Login</ion-button>
+                <ion-button fill="clear" router-link="/">Login</ion-button>
               </ion-tex>
             </ino-col>
             <ino-col>
@@ -92,13 +91,17 @@
               </ion-tex>
             </ino-col>
           </ion-row>
-          <ion-button type="submit" class="sum" color="success"
+          <ion-button
+            type="submit"
+            class="sum"
+            color="success"
+            @click="regsiter"
             >Sign up</ion-button
           >
         </ion-grid>
       </form>
     </ion-content>
-  </ion-page>
+
 </template>
 
 <script lang="js">
@@ -110,18 +113,15 @@ import {
   IonGrid,
   IonRow,
   IonCol,
-  IonPage,
   IonContent
   // IonIcon
 } from "@ionic/vue";
 
 import { defineComponent} from "vue";
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import {db} from '@/firebase/firebaseinit'
-
+import {db} from '../firebase/firebaseinit'
+import { collection, addDoc } from "firebase/firestore";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 export default defineComponent({
-
   name: "reGister",
   components: {
     IonInput,
@@ -131,7 +131,6 @@ export default defineComponent({
     IonGrid,
     IonRow,
     IonCol,
-    IonPage,
     IonContent,
   },
   setup() {
@@ -145,21 +144,38 @@ export default defineComponent({
   },
   methods:{
     async regsiter(){
-       const firebaseAuth = await firebase.auth()
-       const createUser = await firebaseAuth.createUserWithEmailAndPassword(this.email , this.password)
-       const result = await createUser
-       const dataBase = db.collection('users').doc(result.user.uid)
-       await dataBase.set({
-        firstname:this.firstname,
-        lastname:this.lastname,
-        username:this.username,
-        password:this.password,
-        email:this.email,
+      if (
+        this.firstname !== "" &&
+        this.lastname !== "" &&
+        this.username !== "" &&
+        this.password !== "" &&
+        this.email !== "" 
+      ) {
+       const auth = getAuth();
+       await createUserWithEmailAndPassword(auth, this.email, this.password)
+       const docRef = await addDoc(collection(db, "users"),{
+          firstname:this.firstname,
+          lastname:this.lastname,
+          username:this.username,
+          password:this.password,
+          email:this.email,
+        });
 
-       })
-       this.$router.push({path:'/'})
-    }
-  }
+        this.$router.push({ path: "/home" });
+      //   const docRef2 = await addDoc(collection(db, "messages"),{
+      //     firstname:this.firstname,
+      //     lastname:this.lastname,
+      //     username:this.username,
+      //     password:this.password,
+      //     email:this.email,
+      //   });
+      // console.log("Success id = "+docRef2);
+      //  this.$router.push({path:'/home'})
+      } else {
+        alert("Please fill out all the fields!")
+      }
+    },
+  },
 });
 </script>
 <style>
